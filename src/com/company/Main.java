@@ -55,7 +55,7 @@ public class Main {
         satisfaction = scan.nextLine(); // FIX ME
         satisfaction = scan.nextLine(); // Putting this twice to fix WTJ
 
-        boolean runPrompt = false;
+        boolean runPrompt;
 
         switch (satisfaction.toLowerCase())
         {
@@ -73,13 +73,13 @@ public class Main {
             System.out.println("Can you identify what math class method I ran the real answer through?");
             ans = scan.nextLine();
 
-            switch (ans.toLowerCase())
+            if (ans.toLowerCase().equals("sqrt"))
             {
-                case "sqrt":
-                    System.out.println("Ahh, you got me. Now go away, I'm annoyed that I lost.");
-                    break;
-                default:
-                    System.out.println("Haha wrong, I used sqrt");
+                System.out.println("Ahh, you got me. Now go away, I'm annoyed that I lost.");
+            }
+            else
+            {
+                System.out.println("Haha wrong, I used sqrt");
             }
         }
         else
