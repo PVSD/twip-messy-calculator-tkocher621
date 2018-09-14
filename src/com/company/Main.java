@@ -73,7 +73,7 @@ public class Main {
             System.out.println("Can you identify what math class method I ran the real answer through?");
             ans = scan.nextLine();
 
-            if (ans.toLowerCase().equals("sqrt"))
+            if (ans.toLowerCase().equals("sqrt") || ans.toLowerCase().equals("squareroot") || ans.toLowerCase().equals("square root") || ans.toLowerCase().contains("square") || ans.toLowerCase().contains("root"))
             {
                 System.out.println("Ahh, you got me. Now go away, I'm annoyed that I lost.");
             }
